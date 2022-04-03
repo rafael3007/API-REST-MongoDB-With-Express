@@ -35,7 +35,6 @@ class PessoaController {
 
     static atualizarPessoa = (req,res) =>{
         const id = req.params.id
-
         pessoas.findByIdAndUpdate(id,{$set: req.body}, (err) => {
             if(!err){
                 res.status(200).send({message: 'Item atualizado com sucesso!'})
