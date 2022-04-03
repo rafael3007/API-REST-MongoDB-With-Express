@@ -62,3 +62,4 @@ class PessoaController {
 }
 
 export default PessoaController
+
